@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btnCancelRoute"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:onClick="backToList"
+            android:text="BACK"></Button>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrointLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/fragmentGoogleMaps02"
+            android:name="es.iesnervion.yeray.routemarker.Fragments.SeeRouteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="237dp"></fragment>
+
+        <SeekBar
+            android:id="@+id/seekBar01"
+            android:layout_width="203dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="84dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
